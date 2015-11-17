@@ -1,0 +1,41 @@
+/*
+* Antti Eloranta 2015
+*
+*/
+
+.clicker-container,
+.workforce-container,
+.tools-container,
+.booster-container{
+    width:300px;
+    float:left;
+    display:inline;
+}
+.button{
+background-color:green;
+}
+#birch{
+    width:300px;
+    height:auto;
+    
+}
+
+table td{
+margin:0px;
+border-radius: 3px;
+}
+table, td{
+
+}
+#action-td{
+    text-align:center;
+}
+
+.worker{
+    width:75px;
+    height:auto;
+}
+
+.footer {
+display:block;
+}

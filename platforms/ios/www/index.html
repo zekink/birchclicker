@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="clicker-container">
+		<h2>Kaada puu klikkaamalla sitä</h2>
+		<img id="birch" src="img/birch.png"/>
+
+		<p>Puita: <span id="amount"></span><span id="notice"></span></p>
+	</div>
+	<div class="workforce-container">
+		<table>
+			<thead>
+				<tr><td colspan="5">Työvoima</td></tr>
+			</thead>
+			<tr>
+				<td>Palkkaa</td><td>Määrä</td><td>Hinta</td><td id="action-td" colspan="2">Actions</td>
+			</tr>
+			<tr>
+				<td><img id="worker" class="image" src="img/worker.jpg"/><p>työ-ukko</p></td>
+				
+				<td> <p id="workerAmount"></p></td>
+				<td> <p id="workerCost"></p></td>
+				<td> <div id="buyWorker" class="button">Buy</div> </td>
+				<td>  <button onclick="sellWorker()">Sell</button> </td>
+			</tr>
+			<tr>
+				<td><img id="sauna" class="image" src="img/sauna.jpg"/><p>Sauna</p></td>
+				<td> <p id="saunaAmount"></p></td>
+				<td> <p id="saunaCost"></p></td>
+				<td> <button onclick="buySauna()">Buy</button> </td>
+				<td>  <button onclick="sellSauna()">Sell</button> </td>
+			</tr>
+		</table>
+	</div>
+	<div class="tools-container">
+
+	</div>
+	<div class="booster-container">
+
+	</div>
+	<div class="footer">
+		<small>Antti Eloranta, Antti Salo 2015</small>
+	</div>
+	
+	<script src="jquery.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
