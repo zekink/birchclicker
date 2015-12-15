@@ -19,7 +19,9 @@
     };
 	function refresh() {
 		player.rate = worker.amount * worker.power;
-        player.amount = player.amount + player.rate;
+    player.rate = sauna.amount * sauna.power;
+    player.rate = traktori.amount * traktori.power;
+    player.amount = player.amount + player.rate;
 
 /* 		$("#amount").text(Math.round(player.amount).toString());
 		$("#workerAmount").text(worker.amount.toString());
