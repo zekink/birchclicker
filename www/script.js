@@ -12,25 +12,32 @@
         power: 0.03,
         cost: 200
     };
+    var traktori = {
+        amount: 0,
+        power: 0.05,
+        cost: 500
+    };
 	function refresh() {
 		player.rate = worker.amount * worker.power;
         player.amount = player.amount + player.rate;
-		
+
 /* 		$("#amount").text(Math.round(player.amount).toString());
 		$("#workerAmount").text(worker.amount.toString());
 		$("#saunaAmount").text(sauna.amount.toString()); */
-		
+
         document.getElementById("amount").innerHTML = Math.round(player.amount).toString();
         document.getElementById("workerAmount").innerHTML = worker.amount.toString();
         document.getElementById("saunaAmount").innerHTML = sauna.amount.toString();
+        document.getElementById("traktoriAmount").innerHTML = traktori.amount.toString();
     }
 
 $(document).ready(function() {
-    
-	
+
+
     document.getElementById("workerCost").innerHTML = worker.cost.toString();
 	//$("#workerCost") = worker.cost.toString();
     document.getElementById("saunaCost").innerHTML = sauna.cost.toString();
+    document.getElementById("traktoriCost").innerHTML = traktori.cost.toString();
 
 
 	$("#birch").click(function(){
@@ -42,18 +49,14 @@ $(document).ready(function() {
 			worker.cost = Math.round(worker.cost * 1.1);
             worker.amount++;
 			$("#workerCost").text(worker.cost.toString());
-        }
+    }
 	});
-	
+
     function sellWorker() {
         worker.amount--;
         player.amount += worker.cost * 0.5;
     }
-	
+
     setInterval(refresh, 1);
-	
+
 });
-
-
-
-

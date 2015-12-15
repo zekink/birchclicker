@@ -7,17 +7,17 @@
 .workforce-container,
 .tools-container,
 .booster-container{
-    width:300px;
-    float:left;
+    width:auto;
+    float:bottom;
     display:inline;
 }
 .button{
 background-color:green;
 }
 #birch{
-    width:300px;
+    width:auto;
     height:auto;
-    
+
 }
 
 table td{
