@@ -53,7 +53,7 @@ $(document).ready(function() {
 	});
 
   $("#sellWorker").click(function(){
-		if (player.amount != 0) {
+		if (worker.amount != 0) {
             player.amount += worker.cost;
 			worker.cost = Math.round(worker.cost * 0.9);
             worker.amount--;
@@ -62,8 +62,8 @@ $(document).ready(function() {
 	});
 
   $("#buySauna").click(function(){
-		if (sauna.amount >= sauna.cost) {
-            sauna.amount -= sauna.cost;
+		if (player.amount >= sauna.cost) {
+            player.amount -= sauna.cost;
 			sauna.cost = Math.round(sauna.cost * 1.1);
             sauna.amount++;
 			$("#saunaCost").text(sauna.cost.toString());
@@ -72,7 +72,7 @@ $(document).ready(function() {
 
   $("#sellSauna").click(function(){
 		if (sauna.amount != 0) {
-            sauna.amount += sauna.cost;
+            player.amount += sauna.cost;
 			sauna.cost = Math.round(sauna.cost * 0.9);
             sauna.amount--;
 			$("#saunaCost").text(sauna.cost.toString());
@@ -80,8 +80,8 @@ $(document).ready(function() {
 	});
 
   $("#buyTraktori").click(function(){
-		if (traktori.amount >= traktori.cost) {
-            traktori.amount -= traktori.cost;
+		if (player.amount >= traktori.cost) {
+            player.amount -= traktori.cost;
 			traktori.cost = Math.round(traktori.cost * 1.1);
             traktori.amount++;
 			$("#traktoriCost").text(traktori.cost.toString());
@@ -90,7 +90,7 @@ $(document).ready(function() {
 
   $("#sellTraktori").click(function(){
 		if (traktori.amount != 0) {
-            traktori.amount += traktori.cost;
+            player.amount += traktori.cost;
 			traktori.cost = Math.round(traktori.cost * 0.9);
             traktori.amount--;
 			$("#traktoriCost").text(traktori.cost.toString());
