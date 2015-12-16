@@ -7,15 +7,15 @@
 .workforce-container,
 .tools-container,
 .booster-container{
-    width:auto;
-    float:bottom;
+    width:300px;
+    float:left;
     display:inline;
 }
 .button{
 background-color:green;
 }
 #birch{
-    width:auto;
+    width:270px;
     height:auto;
 
 }
